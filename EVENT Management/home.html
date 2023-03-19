@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="LiveCounter.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Home</title>
+  <link rel="icon" type="image/x-icon" href="logo.JPG">
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style:none;
+    font-family: sans-serif;
+}
+
+:root{
+    --bg-color: #222322;
+    --text-color: #fff;
+    --main-color:rgb(76, 154, 198);
+}
+
+body{
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    width: 100%;
+    top:0;
+    right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28ppx 12%;
+    transition: all .50s ease;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo i{
+    color: var(--main-color);
+    font-size: 28px;
+    margin-right: 3px;
+}
+.logo span{
+    color: var(--text-color);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+.navbar a.active{
+    color: var(--main-color);
+}
+
+.main11{
+    display: flex;
+    align-items: center;
+}
+.main a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color:var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+.user11{
+    display: flex;
+    align-items: center;
+}
+
+.user i{
+    color: var(--main-color);
+    font-size: 14px;
+    margin-right: 7px;
+}
+
+.main a:hover{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+@media(max-width:1280px)
+{
+    header{
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar {
+        padding:5px 0;
+        margin:0px 20px;
+    }
+}
+
+@media(max-width:1090px)
+{
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: 100%;
+        top:100%;
+        right:-100%;
+        width: 270px;
+        height: 29vh;
+        background:var(--main-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    .navbar a:hover{
+        color: var(--text-color);
+    }
+    .navbar a.active{
+        color: var(--text-color);
+    }
+
+}   
+    #show_bg_22{
+    background-image:
+    url('main events.jpg');
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    color: black;
+    padding: 20px;
+    opacity: 0.8;}
+    #main1{
+      height: 500px;
+      background-color: black;
+    }
+
+    #sub1{
+
+      height: 500px;
+      width: 25%;
+      float: left;
+    }
+    #sub2{
+
+    height: 500px;
+    width: 25%;
+    float: right ;
+}
+
+    #mainsec{
+      background-color: black;
+      height: 100px;
+      padding: 30px;
+      color: white;    }
+   
+    .ex1{
+      height: 400px;
+      background-image:
+      linear-gradient(to right, rgb(0,0,0,0), rgb(255, 255, 255)),
+    url('bird.jpg');
+    color: white;
+    }
+    .ex2{
+      height: 400px;
+      background-image:
+    linear-gradient(to left, rgb(0,0,0,0), rgb(255, 255, 255)),
+    url('bird.jpg');
+    color: white;
+    }
+    #id{
+      background-color: wheat;
+      height: 100px;
+    }
+    #letter{
+      background-color: coral;
+      height:250px;
+    }
+    .line{
+      height: 3px;
+      background-color: black;
+    }
+    #f1{
+      height: 200px;
+      background-color: crimson;
+      width: 33.33%;
+      float: left;
+    }
+    #f2{
+      height: 200px;
+      background-color: blueviolet;
+      width: 33.33%;
+      float: left;
+    }
+    #f3{
+      height: 200px;
+      background-color: greenyellow;
+      width: 33.33%;
+      float: left;
+    }
+
+    .hero{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(white),url(snowman-4688913_1920.jpg);
+    background-color: white;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.row{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.col{
+    flex-basis: 22%;
+    text-align: center;
+    color: black;
+}
+.counter-box{
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px -4px white;
+    color:black;
+    opacity: 0.7;
+    border: solid white;
+    box-shadow:none;
+}
+h2,span{
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 50px;
+    color: black;
+}
+.counter-box .fa{
+    font-size: 40px;
+    color: rgba(16, 211, 97, 0.603);
+    display: block;
+    }
+#button{
+  background-color:black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#myBtn{
+    background-color: black;
+    color: white;
+    width: 120px;
+    height: 25px;
+}
+   
+  </style>
+</head>
+<body>
+  <header>
+    <a href="home.html" class="logo"><i class="ri-home-heart-fill"></i><img src="logo.JPG" style="height: 100px;"></a>
+
+    <ul class="navbar">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="ourcommunitiy.html">Our Community</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="Mihir/AboutUs/AboutUs.html">About Us</a></li>
+    </ul>
+
+    <div class="main11">
+        <a href="loginpage/loginpage.html" class="user11"><i class="ri-user-fill"><h3>Log In</h3></i></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="Mihir/Join Community/JoinCommunity.html">Sign In</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+
+</header>
+
+<script type="text/javascript" src="C:\Users\Darshil\Desktop\Hackathon\navigation\navi.js">
+
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick =() =>{
+menu.classList.toggle('bx-x');
+navbar.classList.toggle('open');
+
+
+}
+
+</script>
+  <div class="abc">
+    <div style="background-color: black; height: 25px;">
+      
+    </div>
+  </div>
+
+  <div id='show_bg_22'>
+    <br>  
+  <font style="color: white;">
+    <h1 style="color: white;">Can you ignore these excited events ?</h1>
+    <br>You can't miss those excited events out there! <br>There are very few people who have the chance to go and enjoy these enthusiastic events.<br>We Connect you with One of Gujarat's Largest Selections of Amazing events <br>to enjoy and Make Limitless Memories with Your Close Ones. <br><br>On our website, you can find many events destinations near <br>you and enjoy your limited time with unlimited memories. <br>We have a wide range of famous events for every unique person.
+  </font>
+  <br><br>
+    <button onclick="topFunction()" id="myBtn">READ MORE</button>
+  </div>
+  
+  <div style="height: 100x; background-color: black;">
+    <center><h1 style="padding: 10px;">YOU CAN'T MISS THEM !</h1></center>
+    <pre>
+
+    </pre>
+
+  </div>
+  
+  <div id="main1">
+    <div id="sub1"><center>
+        <a href="Mihir/form/music.html"><img  src="music1.jpg" style="height: 450px; border-radius: 10px; width: 300px;" ></center></a>
+        <center><font style="font-size: x-large;">Music Shows</font></center>
+      
+    </div>
+
+    <div id="sub1">
+      
+      <center><font style="font-size: x-large;">Cultural Events</font></center>
+      <center>
+        <a href="Mihir/form/comedy.html"><img src="cultural.jpg" style="height: 450px; border-radius: 10px; width: 300px;" ></a></center>
+    </div>
+
+    <div id="sub1">
+      <center><a href="Mihir/form/cul.html"><img src="comedy.jpg" style="height: 450px; border-radius: 10px;" ></a></center>
+      <center><font style="font-size: x-large;">Comedy Shows</font></center>
+      
+    </div>
+
+    <div id="sub1">
+      <center><font style="font-size: x-large;">Magic Shows </font></center>
+    <center><a href="Mihir/form/mag.html"><img src="magic.jpg" style="height: 450px;border-radius: 10px; width: 300px; " ></a></center>
+    </div>
+  </div>
+
+  <div>
+    <div class="hero">
+      <div class="row">
+          <div class="col">
+              <div class="counter-box">
+                <i class="fa fa-calendar"></i>
+                  <h2 class="counter">400+</h2>
+                  <h4>EVENTS DONE</h4>
+              </div>
+          </div>
+          <div class="col">
+              <div class="counter-box">
+                  <i class="fa fa-users"></i>
+                  <h2 class="counter">750+</h2>
+                  <h4>HAPPY ATTENDE</h4>
+              </div>
+          </div>
+          <div class="col">
+              <div class="counter-box">
+                  <i class="fa fa-heart"></i>
+                  <h2 class="counter">700+</h2>
+                  <h4>POSITIVE FEEDBACK</h4>
+              </div>
+          </div>
+          <div class="col">
+              <div class="counter-box">
+                  <i class="fa fa-globe"></i>
+                  <h2 class="counter">100+</h2>
+                  <h4>EVENTS PLACES</h4>
+              </div>
+
+          </div>
+      </div>
+  </div>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="script.js"></script>
+  </div >
+  <div style="height: 50px; background-color: white;"><pre>
+
+
+  </pre></div>
+
+  
+  <div style="height: 100; background-color: white;">
+    6544456
+  </div>
+  <div class="ex1">
+    <img src="feedback.jpg" style="height: 370px; width: 500px; float: right; padding-top: 20px; padding-right: 10px;">
+    <text style="font-size: x-large; padding: 10px;"> <br>
+      Been here twice and it's been great both visits. Jafo performed tantalizing magic as usual The only thing I'd change is the length of the show - 30 minutes is nowhere near enough to call it a real show. Although affordable, I suggest adding at least 15 more minutes, and ask for a few dollars more. One comedian is ok, having more is better.Simply amazing! You won't believe your eyes. We've visited this little magic show a few times, and it never disappoints.I had the pleasure of seeing two magicians perform their shows recently. They were both very entertaining! The small venue allowed them to engage with the viewers, and we all had a great time. If you go to Old Town in Orlando, be sure to see the magic!!
+
+ <br>
+    <pre>     </pre> -Priyanshu from Indore</text>
+  
+  </div>
+  <div id="space"><br></div>
+
+  <div class="ex2">
+    <img src="feedback1.jpg" style="height: 370px; width: 500px; float: left; padding-top: 20px; padding-left: 10px;">
+    <font style="font-size: x-large; padding: 10px;" ><br>The best! Prepare to be amazed! Fantastic magic show. Did not even know this place was in old town kissimmee. Fantastic show. Close up magic with many magic rooms. Audience participation made it unique. Great affordable price and they have different shows swapping each hour! Even have a load of tricks you can buy and give you a free trick to learn at the end! Definitely worth the visit and old town kissimmee is brilliant with rides, live music, car shows on friday and saturday. Will be back! Highly recommend!Took the children and the grandchildren to the VIP double show. Really entertaining and cool. Well done!<br><br>-Nikki from Vadodra
+</font>
+     </div>
+  <div>
+    
+  </div>
+  <div id="space"><br></div>
+
+<div id="letter" style="background-color: white;color: black;">
+<br>
+  <center><h1>Join Our Newsletter</h1></center><br>
+  <center> <label for="email"><h3>Enter your Mail :</label><br>
+    <input type="email" id="email" name="email"> </center><br>
+    <center>We will send you mail with upcoming updates and notify you with some new Amazing events.</center><br>
+    <center><button type="button" name="Send" id="button" inputmode="click" >Send</button></center>
+</div>
+<hr class="line">
+
+
+<footer>
+  <div id="f1" style="padding: 10px; background-color: black; color: white;">
+    <b><text>© 2023 Evening Unfolds Events <br>All Rights Reserved.<br>
+      Powered by our beloved Attende</text></b>
+  </div>
+  <div id="f2" style="padding: 10px; background-color: black; color: white;">
+    <center><h3>Reach Out and show some Love </h3></center>
+    <font>
+      <br>
+    <center>Instragram : @evening_unfolds_events</center>
+    <center><br>Twitter : @evening_unfolds_events</center>
+    <center><br>Facebook : @evening_unfolds_events </center>
+    </font>
+  </div>
+  <div id="f3" style="padding: 10px; background-color: black; color: white;">
+    <center><h3>Contact Us</h3>
+    <font>
+      <br>
+      <center>Contact : 8080808080</center>
+      <br>E-mail : eveningunfoldsevents@gmail.com
+      <br>Address : Pune, Maharashtra,India. 
+    </font>
+  </center>
+  </div>
+</footer>
+</body>
+</html>
